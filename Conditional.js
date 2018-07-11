@@ -12,7 +12,7 @@
 // Create a variable "username" and set it equal to the user's
 // first command line argument when calling 'node conditional.js'
 let username = process.argv[2]
-console.log("")
+console.log("hello " + username)
 // If "username" is defined, console.log(`Hello, ${username}`)
 // Otherwise, console.log("You must provide a username");
 
@@ -29,15 +29,21 @@ console.log("")
 console.log("You find yourself in a store shopping...");
 // Create a variable "health" and set it equal to 100
 // Create a variable "money" and set it equal to 100
-
+let health = 100;
+let money = 100;
 // Create a variable "item" and set it equal to the user's second command
 // line argument
+let item = process.argv[3]
 
 // If "item" is "jacket", subtract 40 from "money" and add 20 to "health" and console.log("You bought a jacket");
 // else if "item" is "candy", subtract 10 from "money" and console.log("You bought candy");
 // else if "item" is "paint", subtract 30 from "money" and console.log("You bought paint");
 // else if "item" is "hammer", subtract 70 from "money" and console.log("You bought a hammer");
 // else console.log "You bought nothing"
+if(item==jacket){
+    money-=40
+health+=20};
+console.log("you bought a jacket")
 
 // console.log(`You have ${money} dollars left.`);
 
